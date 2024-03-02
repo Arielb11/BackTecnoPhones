@@ -1,0 +1,46 @@
+###
+POST http://localhost:3000/api/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "prueba",
+    "password": "prueba"   
+}
+###
+POST http://localhost:3000/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "prueba",
+    "password": "prueba"   
+}
+
+###
+GET http://localhost:3000/api/phones/iphoneSearch/14 HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/phones HTTP/1.1
+###
+PUT http://localhost:9000/api/phones/65a1a6f7d97a2cc00c5286e6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "modelo": "Iphone 15",
+    "estado": "Usado",
+    "bateria": "97",
+    "capacidad": "128",
+    "observaciones": "White",
+    "valor": "650"    
+}
+
+###
+DELETE http://localhost:9000/api/phones/65a1a6f7d97a2cc00c5286e6 HTTP/1.1
+
+###
+POST http://localhost:3000/api/users/authenticate HTTP/1.1
+Content-Type: application/json
+{
+    "username": "ariel",
+    "password": "ariel123"    
+}
