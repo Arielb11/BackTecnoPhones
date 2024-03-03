@@ -18,5 +18,5 @@ mongoose
     .then(() => console.log('Conexión a MongoDB Atlas establecida'))
     .catch((error) => console.error(error));
 
-app.listen(port, () => console.log('Servidor corriendo en el puerto', port));
+app.listen(port, "0.0.0.0",() => console.log('Servidor corriendo en el puerto', port));
 
